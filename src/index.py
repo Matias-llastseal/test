@@ -131,7 +131,8 @@ def main():
                             
                             logger.debug("Getting sensors data")
                                         
-                            actual_temp = temperature.getHighTemperature()
+                            #actual_temp = temperature.getHighTemperature()
+                            actual_temp = 90
 
                             emit(topic_res, {
                                 'id': hash(payload['id']),                            
@@ -163,10 +164,10 @@ def main():
 
         
         
-        data = temperature.getHighTemperature()
-        logger.info("temperature: %s", data)
+        #data = temperature.getHighTemperature()
+        #logger.info("temperature: %s", data)
         
-        time.sleep(10)
+        #time.sleep(10)
 
 ##
 #
